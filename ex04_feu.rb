@@ -48,7 +48,7 @@ for i in 0..txt.length
 	end 
 end 
 
-
+puts tt
 
 
 while tt > 0
@@ -60,14 +60,14 @@ while tt > 0
 			gg = 0
 			ww = 0
 		puts i 
-			for var in ll
+			for var in ll #trouvé le carré ou il y a le point 
 				if var.include?(i.to_s) && oo < 1 #sert a bloqué pour les tests 
 					oo = oo + 1# ligne du haut mdr 
 					print var 
 					
 					for u in 0..var.length-1
 						for j in 0..x.length
-						if txt[var[u].to_i].to_i == x[j]
+						if txt[var[u].to_i].to_i == x[j] #delete les chiffre qui sont dans le carré
 
 							
 							x.delete_at(j)
